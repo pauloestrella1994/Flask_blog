@@ -1,0 +1,19 @@
+myenv
+venv
+.venv
+*.sqlite3
+db.sqlite3
+*.pyc
+*~~
+/static
+.DS_Store
+Flask_blog/__pycache__/
+
+
+# Visual Studio Code # 
+.vscode/* 
+!.vscode/settings.json 
+!.vscode/tasks.json 
+!.vscode/launch.json 
+!.vscode/extensions.json 
+.history
