@@ -1,9 +1,10 @@
 from flask import Flask, render_template, url_for, flash, redirect
-from forms import RegistrationForm, LoginForm
+from .forms import RegistrationForm, LoginForm
+from .model import User
 
 app = Flask(__name__)
-
 app.config['SECRET_KEY'] = 'e5abea61208527838844a7dfce77ca97'
+
 
 posts = [{ 
            'author': 'Paulo Netto',
