@@ -1,13 +1,16 @@
-from flask.sqlalchemy import SQLAlchemy
-from .forms import RegistrationForm, LoginForm
+from flask import Flask
+from flask_sqlalchemy import SQLAlchemy
+from forms import RegistrationForm, LoginForm
 from datetime import datetime
 
 
-db = SQLAlchemy(app)
+
 
 app = Flask(__name__)
+db = SQLAlchemy(app)
 app.config['SECRET_KEY'] = 'e5abea61208527838844a7dfce77ca97'
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///site.db'
+
 
 class User(db.Model):
     id = db.Column(db.Integer, primary_key=True)

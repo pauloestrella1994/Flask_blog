@@ -8,6 +8,7 @@ db.sqlite3
 /static
 .DS_Store
 Flask_blog/__pycache__/
+.idea
 
 
 # Visual Studio Code # 
